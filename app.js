@@ -4,8 +4,23 @@ const randomMove = () => {
     return gameChoices[Math.floor(Math.random() * 3)]
 }
 
-// console.log(randomMove())
 
+//need to have 3 functions to call for each options
+
+const runRock = () => {
+    let compMove = randomMove()
+    rockPaperScissors(compMove, 'rock')
+}
+
+const runPaper = () => {
+    let compMove = randomMove()
+    rockPaperScissors(compMove, 'paper')
+}
+
+const runScissors = () => {
+    let compMove = randomMove()
+    rockPaperScissors(compMove, 'scissors')
+}
 
 
 const rockPaperScissors = (com, user) => {
@@ -44,3 +59,9 @@ const rockPaperScissors = (com, user) => {
 // }
 
 // console.log("You've quit the game")
+
+/////// connect all the buttons with on click and run the game with corresponding game choice as argument
+
+document.getElementById('rock').addEventListener('click', runRock)
+document.getElementById('paper').addEventListener('click', runPaper)
+document.getElementById('scissors').addEventListener('click', runScissors)
