@@ -6,8 +6,9 @@ body {
     
 }
 
-main *{
+main {
     border: 1px solid black;
+    padding: 30px;
 }
 
  .screen {
@@ -22,4 +23,9 @@ main *{
  .optionContainer {
      display: flex;
      justify-content: space-evenly;
+ }
+
+ button:hover {
+     cursor: pointer;
+     transform: scale(1.1);
  }
