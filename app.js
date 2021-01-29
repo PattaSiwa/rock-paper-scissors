@@ -24,25 +24,29 @@ const runScissors = () => {
 
 
 const rockPaperScissors = (com, user) => {
+    //changing the h3 innerText to correspond the outcome
+
+    const h3 = document.querySelector('h3')
+
     if (com === user) {
-        console.log(`It's a tie!!`)
+        h3.textContent = `It's a tie!! You and Computer chose ${com.charAt(0).toUpperCase() + com.slice(1)}`
     } else if (com === "rock") {
         if (user === "paper") {
-            console.log("Player won! Paper beats Rock!")
+            h3.textContent = "Player won! Paper beats Rock!"
         } else if (user === "scissors") {
-            console.log("Computer won! Rock beats Scissors")
+            h3.textContent = "Computer won! Rock beats Scissors"
         }
     } else if (com === "paper") {
         if (user === "rock") {
-            console.log("Computer won! Paper beats Rock!")
+            h3.textContent = "Computer won! Paper beats Rock!"
         } else if (user === "scissors") {
-            console.log("Player won! Scissors beat Paper!")
+            h3.textContent = "Player won! Scissors beat Paper!"
         }
     } else if (com === "scissors") {
         if (user === "rock") {
-            console.log("Player won! Rock beats Scissors!")
+            h3.textContent = "Player won! Rock beats Scissors!"
         } else if (user === "paper") {
-            console.log("Computer won! Scissors beat Paper!")
+            h3.textContent = "Computer won! Scissors beat Paper!"
         }
     }
 
