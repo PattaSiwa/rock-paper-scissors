@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main *{
+    border: 1px solid black;
+}
+
+ .screen {
+     height: 500px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+
+
+ .optionContainer {
+     display: flex;
+     justify-content: space-evenly;
+ }

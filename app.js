@@ -33,14 +33,14 @@ const rockPaperScissors = (com, user) => {
 
 }
 
-let userInput = prompt("Would you like to play?", 'yes or quit')
+// let userInput = prompt("Would you like to play?", 'yes or quit')
 
-while (userInput !== "quit" || userInput !== "q" ) {
+// while (userInput !== "quit" || userInput !== "q" ) {
 
-    let compMove = randomMove()
-    userInput = prompt("What's your move?", "rock, paper,scissors or quit").toLowerCase()
-    rockPaperScissors(compMove, userInput)
+//     let compMove = randomMove()
+//     userInput = prompt("What's your move?", "rock, paper,scissors or quit").toLowerCase()
+//     rockPaperScissors(compMove, userInput)
 
-}
+// }
 
-console.log("You've quit the game")
+// console.log("You've quit the game")
