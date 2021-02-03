@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400&display=swap');
 body {
     display: flex;
     flex-direction: column;
@@ -23,9 +23,12 @@ main {
 
 
 h2 {
-    font-size: 3.5em;
+    font-size: 4.5em;
     color:  hsl(138, 31%, 43%);
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.9)
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
 h3 {
