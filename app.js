@@ -22,6 +22,11 @@ const runScissors = () => {
     rockPaperScissors(compMove, 'scissors')
 }
 
+const resetDisplay = () => {
+    const h3 = document.querySelector('h3')
+    h3.textContent = "Please make your selection below!"
+}
+
 
 const rockPaperScissors = (com, user) => {
     //changing the h3 innerText to correspond the outcome
@@ -32,7 +37,7 @@ const rockPaperScissors = (com, user) => {
         h3.textContent = `It's a tie!! You and Computer chose ${com.charAt(0).toUpperCase() + com.slice(1)}`
     } else if (com === "rock") {
         if (user === "paper") {
-            h3.textContent = "Player won! Paper beats Rock!"
+            h3.textContent = "You won! Paper beats Rock!"
         } else if (user === "scissors") {
             h3.textContent = "Computer won! Rock beats Scissors"
         }
@@ -40,15 +45,18 @@ const rockPaperScissors = (com, user) => {
         if (user === "rock") {
             h3.textContent = "Computer won! Paper beats Rock!"
         } else if (user === "scissors") {
-            h3.textContent = "Player won! Scissors beat Paper!"
+            h3.textContent = "You won! Scissors beat Paper!"
         }
     } else if (com === "scissors") {
         if (user === "rock") {
-            h3.textContent = "Player won! Rock beats Scissors!"
+            h3.textContent = "You won! Rock beats Scissors!"
         } else if (user === "paper") {
             h3.textContent = "Computer won! Scissors beat Paper!"
         }
     }
+
+    // reset the screen after 5 seconds
+    setTimeout(resetDisplay, 4000)
 
 }
 

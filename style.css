@@ -1,22 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgb(242,146,180);
+    background: radial-gradient(circle, rgba(242,146,180,1) 0%, rgba(249,239,242,1) 97%);
+    font-family: 'Balsamiq Sans', cursive;
     
 }
 
 main {
-    border: 1px solid black;
+    border-radius: 5%;
     padding: 30px;
+    background: rgb(220,226,223);
+    background: radial-gradient(circle, rgba(220,226,223,1) 23%, rgba(171,215,199,1) 83%);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 10px 15px 23px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 10px 15px 23px rgba(0,0,0,0);
+   
 }
 
+
+h2 {
+    font-size: 3.5em;
+    color:  hsl(138, 31%, 43%);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.9)
+}
+
+h3 {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0 10px;
+    color: hsl(109, 13%, 35%);
+    text-shadow: 2px 2px 5px rgba(250,0,0,0.4)
+}
  .screen {
      height: 500px;
      width: 400px;
      display: flex;
      justify-content: center;
      align-items: center;
+     transition: 2s;
  }
 
 
@@ -29,4 +54,26 @@ main {
  button:hover {
      cursor: pointer;
      transform: scale(1.1);
+
  }
+
+ button:focus{
+     border:none;
+     
+     outline:none;
+ }
+
+ button{
+     background-color: #E3B1C3;
+     color: #434742;
+    font-size: 25px;
+    font-family: 'Balsamiq Sans', cursive;
+    border: none;
+    padding: 17px;
+    border-radius: 10%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+ }
+
+ 
